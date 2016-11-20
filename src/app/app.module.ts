@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TypographyComponent } from './typography/typography.component';
 import { ColorsComponent } from './colors/colors.component';
@@ -22,13 +23,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path: '', component: WelcomeComponent },
-      { path: 'photos/:id', component: PhotosComponent },
-
-    ])
-  ],
+    AppRoutingModule
+    ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
