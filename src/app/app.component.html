@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="container">
+  <div class="row">
+      <div class="no-float col-md-2 sideNav">
+        <nav class="navigation">
+          <a class="navigationItems" routerLink="/photos" routerLinkActive="active">Photos</a>
+          <a class="navigationItems" routerLink="/typography" routerLinkActive="active">Typography</a>
+          <a class="navigationItems" routerLink="/colors" routerLinkActive="active">Colors</a>
+        </nav>
+      </div>
+
+      <div class="no-float col-md-10 mainCont">
+        <router-outlet></router-outlet>
+      </div>
+      <!-- End of row -->
+  </div>
+  <!-- End of container -->
+</div>
