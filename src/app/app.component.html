@@ -1,17 +1,19 @@
 
 <div class="container">
   <div class="row">
-      <div class="no-float col-md-2 sideNav">
-        <nav class="navigation">
-          <a class="navigationItems" routerLink="/photos" routerLinkActive="active">Photos</a>
-          <a class="navigationItems" routerLink="/typography" routerLinkActive="active">Typography</a>
-          <a class="navigationItems" routerLink="/colors" routerLinkActive="active">Colors</a>
-        </nav>
-      </div>
 
-      <div class="no-float col-md-10 mainCont">
-        <router-outlet></router-outlet>
-      </div>
+    <div class="no-float mainCont">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class="no-float sideNav">
+      <nav class="navigation">
+        <a class="navigationItems" routerLink="/photos" routerLinkActive="active">Photos</a>
+        <a class="navigationItems" routerLink="/typography" routerLinkActive="active">Typography</a>
+        <a class="navigationItems" routerLink="/colors" routerLinkActive="active">Colors</a>
+      </nav>
+    </div>
+
       <!-- End of row -->
   </div>
   <!-- End of container -->

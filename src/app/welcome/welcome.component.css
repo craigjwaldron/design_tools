@@ -1,17 +1,18 @@
 div {
-  background: lightgray;
   display: inline-block;
   padding: 50px;
 }
 
 body {
   padding-top: 50px;
-  text-align: center;
+  text-align: left;
   background: rgb(244, 244, 244);
   font-family: 'Lato';
 }
 
 h1 {
-  color: rgb(75, 75, 200);
-  font-weight: 300;
+  color: rgb(209, 96, 61);
+  font-weight: 900;
+  text-align: left;
+  font-size: 2.5em;
 }
